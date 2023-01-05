@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="chitietsanpham.css" />
+    <link rel="icon" href="image\icontrangchu.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <title>Chi Tiết Sản Phẩm</title>
+</head>
+
+<body>
+    <div class="wapper_modal">
+    <header>
+        <nav>
+            <div class="header_top">
+                <div class="logo_top_left"><img src="image/logo.jpg" alt="logo" usemap="#map_logo"></div>
+                <map name="map_logo">
+                    <area shape="rect" coords="0,1,303,240" href="tra.html" alt="">
+                </map>
+                <div class="danhmuc_center">
+                    <ul class="menu">
+                        <li><a href="trangchu.html"><button>Trang Chủ</button></a></li>
+                        <li class="has_submenu">
+                            <a href=""><button>Mặt hàng</button></a>
+                        </li>
+                        <li><a href="dangky.html"><button>Đăng Kí</button></a></li>
+                        <li><a href="dangnhap.html"><button>Đăng Nhập</button></a></li>   
+                        <li><a href="dangban.html"><button>Đăng bán</button></a></li>
+                        <li class="has_submenu"><a href=""><button>Thông Báo</button></a>
+                            <ul class="submenu">
+                                <div class="thongbao"> Bạn chưa có thông báo mới</div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="input_top_right"><input class="input_header" size="30"
+                        placeholder="Tìm kiếm trên Chợ Cũ Sinh Viên" type="text">
+                    <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="khung_giohang">
+            <table>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">
+                            <div class="slider">
+                                <div class="slides">
+                                    <input type="radio" name="radio-btn" id="radio1">
+                                    <input type="radio" name="radio-btn" id="radio2">
+                                    <input type="radio" name="radio-btn" id="radio3">
+                                    <input type="radio" name="radio-btn" id="radio4">
+                                    <!--slide ảnh start-->
+                                    <div class="slide first">
+                                        <img src="image/anh1.1.jpg" alt="">
+                                    </div>
+
+                                    <div class="slide">
+                                        <img src="image/anh2.2.jpg" alt="">
+                                    </div>
+
+                                    <div class="slide">
+                                        <img src="image/anh3.3.jpg" alt="">
+                                    </div>
+
+                                    <div class="slide">
+                                        <img src="image/anh4.4.jpg" alt="">
+                                    </div>
+                                    <!--slide ảnh end-->
+
+                                    <!--auto bắt đầu-->
+                                    <div class="navigation-auto">
+                                        <div class="auto-btn1"></div>
+                                        <div class="auto-btn2"></div>
+                                        <div class="auto-btn3"></div>
+                                        <div class="auto-btn4"></div>
+                                    </div>
+                                    <!--auto kết thúc-->
+                                </div>
+                                <!--điều hướng thủ công start-->
+                                <div class="navigation-manual">
+                                    <label for="radio1" class="manual-btn"></label>
+                                    <label for="radio2" class="manual-btn"></label>
+                                    <label for="radio3" class="manual-btn"></label>
+                                    <label for="radio4" class="manual-btn"></label>
+                                </div>
+                                <!--điều hướng thủ công end-->
+                            </div>
+                            <script type="text/javascript">
+                                var counter = 1;
+                                setInterval(function () {
+                                    document.getElementById('radio' + counter).checked = true;
+                                    counter++;
+                                    if (counter > 4) {
+                                        counter = 1;
+                                    }
+                                }, 4000);
+                            </script>
+                        </td>
+                        <td rowspan="2"><img class="anhcuasanpham" src="image/trong.jpg" alt="ảnh sản phẩm"></td>
+                        <td class="infor_sanpham">
+                            <div class="metmoi">
+                                <div class="ten_san_pham">
+                                    Trống cajon
+                                    <br>
+                                    <div class="mota_sanpham">
+                                        <p>
+                                            <li>Trống cajon TCHAIKA gỗ </li>
+                                            <li>Âm Bass tốt</li>
+                                            <li>Giá hạt giẻ</li>
+                                            <li>Tặng kèm miếng lót và bao đựng</li>
+                                            <li>Kho:1</li>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="nut_muahang"><button>mua hàng</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+        </div>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="infor">
+                Design by group 4, sophmore of information technology in CTU(Hoa An)
+            </div>
+        </div>
+    </footer>
+    <div id="modal_container">
+        <div class="modal" id="modal_demo">
+            <div class="modal_header">
+               <h2>THÔNG BÁO</h2>
+               <button id="button_close"> <i class="fa-solid fa-circle-xmark"></i></button>
+            </div>
+            <div class="modal_body">
+                <p>Bạn đã đặt hàng thành công</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+    const nut_muahang = document.getElementById('nut_muahang');
+    const button_close = document.getElementById('button_close');
+    const modal_container = document.getElementById('modal_container');
+
+
+    const modal_demo = document.getElementById('modal_demo');
+   
+   
+    nut_muahang.addEventListener('click', ()=>{
+        modal_container.classList.add('show');
+    });
+    button_close.addEventListener('click', ()=>{
+        modal_container.classList.remove('show');
+    });
+
+    modal_container.addEventListener('click', (e)=>{
+        if(!modal_demo.contains(e.target)){
+            button_close.click();
+        }
+    });
+
+
+</script>
+<script src="script.js"></script>
+
+</html>

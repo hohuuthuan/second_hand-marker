@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Bán</title>
+  <link rel="stylesheet" href="dangban.css">
+  <link rel="icon" href="image\icontrangchu.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <div class="wapper_modal">
+    <header>
+      <nav>
+        <div class="header_top">
+          <div class="logo_top_left"><img src="image/logo.jpg" alt="logo" usemap="#map_logo"></div>
+          <map name="map_logo">
+            <area shape="rect" coords="0,1,303,240" href="trangchu.html" alt="">
+          </map>
+          <div class="danhmuc_center">
+            <ul class="menu">
+              <li><a href="trangchu.html"><button>Trang Chủ</button></a></li>
+              <li class="has_submenu">
+                <a href=""><button>Mặt hàng</button></a>
+              </li>
+              <li><a href="dangky.html"><button>Đăng Kí</button></a></li>
+              <li><a href="dangnhap.html"><button>Đăng Nhập</button></a></li>
+              <li><a href="dangban.html"><button>Đăng bán</button></a></li>
+              <li class="has_submenu"><a href=""><button>Thông Báo</button></a>
+                <ul class="submenu">
+                  <div class="thongbao"> Bạn chưa có thông báo mới</div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="input_top_right"><input class="input_header" size="30"
+              placeholder="Tìm kiếm trên Chợ Cũ Sinh Viên" type="text">
+            <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <div class="nut_dangban">
+
+        </div>
+      </nav>
+
+    </header>
+    <main>
+
+      <form method="post" action="" autocomplete="off" enctype="multipart/form-data" id="dangki">
+
+        <table>
+
+          <tr>
+            <td colspan="2" class="tieude">Vui lòng nhập đầy đủ thông tin</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Họ Tên:</th>
+            <td><input class="input" type="text" placeholder="Vui lòng nhập đầy đủ họ tên" required></td>
+          </tr>
+          <tr>
+            <th>SĐT:</th>
+            <td><input class="input" type="number" placeholder="Sđt 10 số" required></td>
+          </tr>
+
+          <tr>
+            <th>Địa chỉ:</th>
+            <td> <textarea class="border_input" placeholder="Nhập địa chỉ" cols="51" rows="4" required></textarea></td>
+          </tr>
+
+          <tr>
+            <th>Loại sản phẩm:</th>
+            <td>
+              <select required class="chonj" name="" id="">
+                <option value="">--Chọn--</option>
+                <option value="">Đồ Gia Dụng</option>
+                <option value="">Đồ Điện Tử</option>
+                <option value="">Dụng Cụ Học Tập</option>
+                <option value="">Giải Trí</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>Hình ảnh sản phẩm:</th>
+            <td><input type="file" required></td>
+          </tr>
+
+          <tr>
+            <th>Mô tả sản phẩm:</th>
+            <td> <textarea class="border_input" placeholder="Mô tả sản phẩm" cols="51" rows="4" required></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th>Giá bán sản phẩm:</th>
+            <td><input class="input" type="number" placeholder="Nhập giá sản phẩm" required></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="nut" colspan="2">
+              <input class="size_button" style="color:white ; background-color: red" type="reset" value="Huỷ">
+              <input id="nut_capnhat" class="size_button" style="color: white ; background-color: rgb(0, 140, 255)"
+                type="submit" value="Đăng kí">
+              <div id="nut_muahang"><button>Đăng Bán</button></div>
+            </td>
+
+          </tr>
+
+        </table>
+      </form>
+
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="infor">
+          Design by group 4, sophmore of information technology in CTU(Hoa An)
+        </div>
+      </div>
+
+    </footer>
+    <div id="modal_container">
+      <div class="modal" id="modal_demo">
+        <div class="modal_header">
+          <h2>THÔNG BÁO</h2>
+          <button id="button_close"> <i class="fa-solid fa-circle-xmark"></i></button>
+        </div>
+        <div class="modal_body">
+          <p>Mặt hàng của bạn đang chờ được duyệt,
+            sẽ có cuộc gọi để thông báo đến bạn trong thời gian sớm nhất <br>
+            <b> xin cảm ơn!!!</b>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="modal_containerr">
+      <div class="modall" id="modal_demoo">
+        <div class="modal_headerr">
+          <h2>THÔNG BÁO</h2>
+          <button id="button_closee"> <i class="fa-solid fa-circle-xmark"></i></button>
+        </div>
+        <div class="modal_bodyy">
+          <p>Mặt hàng của bạn đã được cập nhật thông tin, vui lòng click <b>ĐĂNG BÁN</b> để đăng kí bán mặt hàng<br>
+            <b> xin cảm ơn!!!</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  const nut_capnhat = document.getElementById('nut_capnhat');
+  const button_closee = document.getElementById('button_closee');
+  const modal_containerr = document.getElementById('modal_containerr');
+
+
+  const modal_demoo = document.getElementById('modal_demoo');
+
+
+  nut_capnhat.addEventListener('click', () => {
+    modal_containerr.classList.add('showw');
+  });
+  button_closee.addEventListener('click', () => {
+    modal_containerr.classList.remove('showw');
+  });
+
+  modal_containerr.addEventListener('click', (e) => {
+    if (!modal_demoo.contains(e.target)) {
+      button_closee.click();
+    }
+  });
+
+
+</script>
+
+<script>
+  const nut_muahang = document.getElementById('nut_muahang');
+  const button_close = document.getElementById('button_close');
+  const modal_container = document.getElementById('modal_container');
+
+
+  const modal_demo = document.getElementById('modal_demo');
+
+
+  nut_muahang.addEventListener('click', () => {
+    modal_container.classList.add('show');
+  });
+  button_close.addEventListener('click', () => {
+    modal_container.classList.remove('show');
+  });
+
+  modal_container.addEventListener('click', (e) => {
+    if (!modal_demo.contains(e.target)) {
+      button_close.click();
+    }
+  });
+
+
+</script>
+
+</html>

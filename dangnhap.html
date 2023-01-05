@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Đăng Nhập</title>
+	<link rel="stylesheet" href="dangnhap.css">
+	<link rel="icon" href="image\icontrangchu.jpg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="header_top">
+				<div class="logo_top_left"><img src="image/logo.jpg" alt="logo" usemap="#map_logo"></div>
+				<map name="map_logo">
+					<area shape="rect" coords="0,1,303,240" href="trangchu.html" alt="">
+				</map>
+				<div class="danhmuc_center">
+					<ul class="menu">
+						<li><a href="trangchu.html"><button>Trang Chủ</button></a></li>
+						<li class="has_submenu">
+							<a href=""><button>Mặt hàng</button></a>
+						</li>
+						<li><a href="dangky.html"><button>Đăng Kí</button></a></li>
+						<li><a href=""><button>Đăng Nhập</button></a></li>
+						<li><a href="dangban.html"><button>Đăng bán</button></a></li>
+						<li class="has_submenu"><a href=""><button>Thông Báo</button></a>
+							<ul class="submenu">
+								<div class="thongbao"> Bạn chưa có thông báo mới</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="input_top_right"><input class="input_header" size="30"
+						placeholder="Tìm kiếm trên Chợ Cũ Sinh Viên" type="text">
+					<button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="container">
+			<h1 class="label">Đăng Nhập</h1>
+			<form class="login_form" action="index.html" method="post" name="form" onsubmit="return validated()">
+				<div class="font">Email or Phone</div>
+				<input placeholder="vd:trandan@gmail.com" autocomplete="off" type="text" name="email">
+				<div id="email_error">Please fill up your Email or Phone</div>
+				<div class="font font2">Password</div>
+				<input placeholder="ít nhất 6 kí tự" type="password" name="password">
+				<div id="pass_error">Please fill up your Password</div>
+				<button type="submit">Login</button>
+			</form>
+		</div>
+
+	</main>
+	<footer>
+		<div class="footer">
+			<div class="infor">
+				Design by group 4, sophmore of information technology in CTU(Hoa An)
+			</div>
+		</div>
+	</footer>
+	
+	<script src="valid.js"></script>
+</body>
+
+</html>

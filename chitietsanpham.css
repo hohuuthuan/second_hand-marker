@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&dispay=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+}
+
+main{
+  background-color: rgb(226, 233, 233);
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 673px;
+  margin: 0;
+}
+
+
+.header_top{
+  width: 100%;
+  height: 100px;
+  background-color: rgb(241, 175, 53);
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+}
+/* dropdown */
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+}
+
+.menu li {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 16px;
+}
+
+.has_submenu {
+  position: relative;
+}
+
+.has_submenu:hover .submenu {
+  display: block;
+}
+
+
+.submenu {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  display: none;
+  background-color: aqua;
+  border-radius: 7px;
+  border: 1px solid;
+  width: 150px;
+}
+ul .submenu li:hover {
+  background-color: rgb(162, 243, 243);
+}
+.thongbao{
+  padding: 5px;
+}
+.slider {
+    width: 265px;
+    height: 555px; 
+    overflow: hidden;
+}
+.slides {
+    width: 500%;
+    height: 450px;
+    display: flex;
+}
+
+.slides .slide img{
+    border-radius: 7px;
+}
+
+.slides input {
+    display: none;
+}
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+.slide img {
+    width: 260px;
+    height: 555px;
+   
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 270px;
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid rgb(67, 67, 172);
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.manual-btn:hover {
+    background: rgb(241, 175, 53);
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 270px;
+    justify-content: center;
+    margin-top: 410px;
+}
+.navigation-auto div {
+    margin-top: 125px;
+    border: -2px solid #FF33FF;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: rgb(241, 175, 53);
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: rgb(241, 175, 53);
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: rgb(241, 175, 53);
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: rgb(241, 175, 53);
+}
+/*  */
+.logo_top_left>img{
+  width: 70px;
+  height: 70px;
+  margin-top: 12px;
+}
+.danhmuc_center{
+  margin-top: 5px;
+  margin-left: 70px;
+}
+.danhmuc_center li a button{
+	border-radius: 7px;
+	width: 100px;
+	height: 30px;
+	font-weight: 600;
+  }
+.input_top_right{
+  margin-top: 30px;
+}
+.button_header{
+  width: 100px;
+  height: 30px;
+  border-radius: 7px;
+}
+.input_header{
+  border-radius: 5px;
+  height: 28px;
+}
+button:hover{
+  background-color: aqua;
+}
+button.search{
+  width: 45px;
+  height: 28px;
+  border-radius: 5px;
+}
+
+
+.khung_giohang{
+     border: 3px solid black;
+     border-radius: 7px;
+     margin-top: 100px;
+}
+
+table{
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+.gio_hang{
+    width: 70%;
+    height: 700px;
+}
+
+table td img.anhcuasanpham{
+    width: 410px;
+    height: 410px;
+    border-radius: 7px;
+}
+td.infor_sanpham{
+    width: 500px;
+    height: 470px;
+}
+.ten_san_pham{
+    margin-top: 0px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    height: 10px;
+}
+.infor_sanpham .ten_san_pham .mota_sanpham{
+   text-align: left;
+   font-size: 20px;
+   text-transform: none;
+   font-weight: 300;
+   height: 100px;
+}
+.metmoi{
+    margin-bottom: 430px;
+    word-break: break-all;
+}
+p{
+    word-wrap: break-word;
+}
+table td#nut_muahang button{
+    margin-left: 100px;
+    width: 300px;
+    height: 40px;
+    border-radius: 7px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footer{
+  width: 100%;
+  height: 80px;
+  background-color: rgb(241, 175, 53) ;
+ 
+}
+.infor{
+  font-family: "Trirong", serif;
+  font-size: 15px;
+  padding: 35px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+ 
+}
+/* cửa sổ đặt hàng */
+.wapper_modal{
+  min-height: 100%;
+}
+#modal_container{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+#modal_container.show{
+  opacity: 1;
+  pointer-events: all;
+}
+.modal{
+  background: rgb(241, 175, 53);
+  border-radius: 7px;
+  max-width: 500px;
+  height: 230px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s ease-in-out;
+ 
+}
+
+#modal_container.show .modal{
+   top: 200px;
+}
+
+
+.modal_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  border-bottom: 1px solid black;
+  margin: 0;
+}
+#modal .modal_header h2{
+  margin: 0;
+  font-size: 100px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.modal_body p{
+  text-align: center;
+  padding: 40px 50px 20px 30px;
+  font-size: 25px;
+}
+button#button_close{
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+/*  */

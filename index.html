@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="image\icontrangchu.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+</head>
+
+<body>
+    <div class="bck">
+        <header>
+            <nav>
+                <div class="header_top">
+                    <div class="logo_top_left"><img src="image/logo.jpg" alt="logo" usemap="#map_logo"></div>
+                    <map name="map_logo">
+                        <area shape="rect" coords="0,1,303,240" href="trangchu.html" alt="">
+                    </map>
+                    <div class="danhmuc_center">
+                        <ul class="menu">
+                            <li><a href="trangchu.html"><button>Trang Chủ</button></a></li>
+                            <li class="has_submenu">
+                                <a href=""><button>Mặt hàng</button></a>
+                                <ul class="submenu">
+                                    <li class="vien_tren"><a href="#dogiadung">Đồ Gia Dụng</a></li>
+                                    <li class="vien"><a href="#dodientu">Đồ Điện Tử</a></li>
+                                    <li class="vien"><a href="#dungcuhoctap">Dụng Cụ Học Tập</a></li>
+                                    <li id="vien_giaitri" class="vien_duoi"><a href="#giaitri">Giải Trí</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="dangky.html"><button>Đăng Kí</button></a></li>
+                            <li><a href="dangnhap.html"><button>Đăng Nhập</button></a></li>
+                            <li><a href="dangban.html"><button>Đăng bán</button></a></li>
+                            <li class="has_submenu"><a href=""><button>Thông Báo</button></a>
+                                <ul class="submenu">
+                                    <div class="thongbao"> Bạn chưa có thông báo mới</div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="input_top_right"><input size="30" placeholder="Tìm kiếm trên Chợ Cũ Sinh Viên"
+                            type="text">
+                        <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--  -->
+        <main>
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!--slide ảnh start-->
+                    <div class="slide first">
+                        <img src="image/anh1.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="image/anh2.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="image/anh3.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="image/anh4.jpg" alt="">
+                    </div>
+                    <!--slide ảnh end-->
+
+                    <!--auto bắt đầu-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!--auto kết thúc-->
+                </div>
+                <!--điều hướng thủ công start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--điều hướng thủ công end-->
+            </div>
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function () {
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if (counter > 4) {
+                        counter = 1;
+                    }
+                }, 4000);
+            </script>
+
+            <div class="wapper">
+                <div class="headline">
+                    <h3 id="dogiadung">Đồ Gia Dụng</h3>
+                </div>
+                <ul class="products">
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="noicom.html" class="product-thumb">
+                                    <img src="image/noicom.jpg" alt="">
+                                </a>
+                                <a href="noicom.html" class="buy-now">Xem chi tiết</a>
+                            </div>
+
+                            <div class="product-infor">
+                                <a href="noicom.html" class="product-cat">Nồi cơm điện</a>
+                                <div class="product-price">300.000vnd</div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="quatmay.html" class="product-thumb">
+                                    <img style="height: 335px;" , width="445px" src="image/quat.jpg" alt="">
+                                </a>
+                                <a href="quatmay.html" class="buy-now">Xem chi tiết</a>
+                            </div>
+
+                            <div class="product-infor">
+                                <a href="quatmay.html" class="product-cat">Quạt máy</a>
+                                <div class="product-price">350.000vnd</div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="bepgas.html" class="product-thumb">
+                                    <img src="image/bepga.jpg" alt="">
+                                </a>
+                                <a href="bepgas.html" class="buy-now">Xem chi tiết</a>
+                            </div>
+
+                            <div class="product-infor">
+                                <a href="bepgas.html" class="product-cat">Bếp gas mini</a>
+                                <div class="product-price">150.000vnd</div>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="wapper">
+                <div class="headline">
+                    <h3 id="dodientu">Đồ Điện Tử</h3>
+                </div>
+
+                <ul class="products">
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="laptop.html" class="product-thumb">
+                                    <img src="image/laptop cũ.jpg" alt="">
+                                </a>
+                                <a href="laptop.html" class="buy-now">Xem chi tiết</a>
+                            </div>
+
+                            <div class="product-infor">
+                                <a href="laptop.html" class="product-cat">Laptop</a>
+                                <div class="product-price">4.000.000vnd</div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="mayin.html" class="product-thumb">
+                                    <img src="image/mayin.jpg" alt="">
+                                </a>
+                                <a href="mayin.html" class="buy-now">Xem chi tiết</a>
+                            </div>
+
+                            <div class="product-infor">
+                                <a href="mayin.html" class="product-cat">Máy in</a>
+                                <div class="product-price">500.000vnd</div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="mayanh.html" class="product-thumb">
+                                    <img src="image/mayanh.jpg" alt="">
+                                </a>
+                                <a href="mayanh.html" class="buy-now">Xem chi tiết</a>
+                            </div>
+
+                            <div class="product-infor">
+                                <a href="mayanh.html" class="product-cat">Máy ảnh</a>
+                                <div class="product-price">450.000vnd</div>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="wapper">
+                <div class="headline">
+                    <h3 id="dungcuhoctap">Dụng Cụ Học Tập</h3>
+                </div>
+
+                <ul class="products">
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="balo.html" class="product-thumb">
+                                    <img src="image/balo.jpg" alt="">
+                                </a>
+                                <a href="balo.html" class="buy-now">Xem chi tiết</a>
+
+                            </div>
+
+                            <div class="product-infor">
+                                <a href="balo.html" class="product-cat">Balo</a>
+                                <div class="product-price">100.000vnd</div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="banhoc.html" class="product-thumb">
+                                    <img src="image/banhoc.jpg" alt="">
+                                </a>
+                                <a href="banhoc.html" class="buy-now">Xem chi tiết</a>
+                            </div>
+                            <div class="product-infor">
+                                <a href="banhoc.html" class="product-cat">Bàn học</a>
+                                <div class="product-price">150.000vnd</div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="giaotrinh.html" class="product-thumb">
+                                    <img src="image/giaotrinh.jpg" alt="">
+                                </a>
+                                <a href="giaotrinh.html" class="buy-now">Xem chi tiết</a>
+                            </div>
+
+                            <div class="product-infor">
+                                <a href="giaotrinh.html" class="product-cat">Giáo trình Triết học</a>
+                                <div class="product-price">50.000vnd</div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+
+
+            <div class="wapper">
+                <div class="headline">
+                    <h3 id="giaitri">Giải Trí</h3>
+                </div>
+
+                <ul class="products">
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="dan.html" class="product-thumb">
+                                    <img src="image/dan.jpg" alt="">
+                                </a>
+                                <a href="dan.html" class="buy-now">Xem chi tiết</a>
+                            </div>
+
+                            <div class="product-infor">
+                                <a href="dan.html" class="product-cat">Đàn</a>
+                                <div class="product-price">2.000.000vnd</div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="trong.html" class="product-thumb">
+                                    <img src="image/trong.jpg" alt="">
+                                </a>
+                                <a href="trong.html" class="buy-now">Xem chi tiết</a>
+                            </div>
+
+                            <div class="product-infor">
+                                <a href="trong.html" class="product-cat">Trống</a>
+                                <div class="product-price">650.000vnd</div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="vot.html" class="product-thumb">
+                                    <img src="image/votcaulong.jpg" alt="">
+                                </a>
+                                <a href="vot.html" class="buy-now">Xem chi tiết</a>
+                            </div>
+
+                            <div class="product-infor">
+                                <a href="vot.html" class="product-cat">Vợt cầu lông</a>
+                                <div class="product-price">300.000vnd</div>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+        </main>
+        <!--  -->
+        <footer>
+            <div class="footer">
+                <div class="infor">
+                    Design by group 4, sophmore of information technology in CTU(Hoa An)
+                </div>
+            </div>
+
+            <div id="backtop"><i class="fa-solid fa-arrow-up"></i></div>
+        </footer>
+    </div>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous">
+    </script>
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop()) {
+                $('#backtop').fadeIn();
+            } else {
+                $('#backtop').fadeOut();
+            }
+        });
+        $('#backtop').click(function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 200);
+        });
+    });
+</script>
+
+</html>

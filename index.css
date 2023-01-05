@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bck {
+    background-color: rgb(193, 195, 195);
+    margin: 0;
+    padding: 0;
+}
+
+.header_top {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(241, 175, 53);
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+}
+/* dropdown */
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+
+.menu li {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 16px;
+}
+
+.has_submenu {
+    position: relative;
+}
+
+.has_submenu:hover .submenu {
+    display: block;
+}
+
+
+.submenu {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    display: none;
+    background-color: aqua;
+    border-radius: 7px;
+    border: 1px solid;
+    width: 150px;
+}
+
+ul .submenu {
+    border: 1px solid;
+}
+
+ul .submenu li.vien {
+    border-top: 1px solid;
+}
+
+ul .submenu li#vien_giaitri {
+    border-top: 1px solid;
+}
+
+ul .submenu li {
+    text-align: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ul .submenu li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul .submenu li:hover {
+
+    background-color: rgb(162, 243, 243);
+}
+
+ul .submenu li.vien_tren:hover {
+    border-radius: 7px 7px 0 0;
+    background-color: rgb(162, 243, 243);
+}
+
+ul .submenu li.vien_duoi:hover {
+    border-radius: 0 0 7px 7px;
+    background-color: rgb(162, 243, 243);
+}
+.thongbao{
+    padding: 5px;
+}
+/*  */
+
+.slider {
+    width: 1520px;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 450px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+
+}
+
+.slide img {
+    width: 1520px;
+    height: 450px;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 1520px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid rgb(67, 67, 172);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.manual-btn:hover {
+    background: rgb(241, 175, 53);
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 1520px;
+    justify-content: center;
+    margin-top: 410px;
+}
+
+.navigation-auto div {
+    border: 2px solid #FF33FF;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 30px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: rgb(241, 175, 53);
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: rgb(241, 175, 53);
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: rgb(241, 175, 53);
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: rgb(241, 175, 53);
+}
+
+.logo_top_left>img {
+    width: 70px;
+    height: 70px;
+    margin-top: 12px;
+}
+
+.danhmuc_center {
+    margin-top: 5px;
+    margin-left: 200px;
+}
+
+.input_top_right {
+    margin-top: 30px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+input {
+    border-radius: 5px;
+    height: 22px;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+button.search {
+    width: 45px;
+    height: 28px;
+}
+
+.wapper {
+    margin-top: 10px;
+}
+
+.headline {
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    color: rgb(67, 67, 172);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: rgb(241, 175, 53);
+    border-radius: 5px;
+}
+
+ul.products {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.products li {
+    margin-bottom: 40px;
+    flex-basis: 30%;
+}
+
+ul.products li img {
+    width: 445px;
+    height: 335px;
+    border: 1px solid;
+}
+
+ul.products li .product-top {
+    position: relative;
+    overflow: hidden;
+}
+
+ul.products li .product-top .product-thumb {
+    display: block;
+}
+
+ul.products li:hover .product-top .product-thumb img {
+    filter: opacity(80%);
+}
+
+ul.products li .product-top .product-thumb img {
+    display: block;
+}
+
+ul.products li .product-top a.buy-now {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    background-color: rgb(32, 137, 141);
+    color: #fff;
+    padding: 10px 0px;
+    bottom: -38px;
+    position: absolute;
+    width: 100%;
+    transition: 0.30s ease-in-out;
+    opacity: 0.80;
+}
+
+ul.products li:hover a.buy-now {
+    bottom: 0px;
+}
+
+ul.products li .product-infor {
+    padding: 10px 0px;
+}
+
+ul.products li .product-infor a {
+    display: block;
+    text-decoration: none;
+}
+
+ul.products li .product-infor a.product-cat {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(144, 4, 4);
+    padding: 3px 0px;
+}
+
+ul.products li .product-infor a.product-name {
+    color: darkcyan;
+    padding: 3px 0px;
+}
+
+ul.products li .product-infor .product-price {
+    font-weight: 700;
+    color: forestgreen;
+    padding: 3px 0px;
+}
+
+#backtop {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(241, 175, 53);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    cursor: pointer;
+}
+.footer {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(241, 175, 53);
+
+}
+.infor {
+    font-family: "Trirong", serif;
+    font-size: 15px;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
